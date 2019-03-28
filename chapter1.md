@@ -32,7 +32,13 @@ In out first exercise we will create our very first pivot table in python.
 
 `@sample_code`
 ```{python}
+import ____ as ____
+import ____ as ____
 
+df = sns.load_dataset('tips')
+df.____()
+
+df.pivot_table(index='sex', columns='day', values='tip')
 ```
 
 `@solution`
