@@ -4,6 +4,19 @@ description: 'Chapter description goes here.'
 free_preview: true
 ---
 
+## Intro
+
+```yaml
+type: VideoExercise
+key: 524a94e059
+xp: 50
+```
+
+`@projector_key`
+94fd74cda3e65200f8af530027759984
+
+---
+
 ## Introduction to Pandas Pivot Tables
 
 ```yaml
@@ -54,5 +67,11 @@ df.pivot_table(index='sex', columns='day', values='tip')
 
 `@sct`
 ```{python}
+import pandas as pd
+import seaborn as sns
 
+df = sns.load_dataset('tips')
+df.head()
+
+df.pivot_table(index='sex', columns='day', values='tip')
 ```
